@@ -31,7 +31,7 @@
   margin: 100px 0px;
   border: 2px solid rgba(0, 0, 0, 1);
   padding: clamp(122px, 30%, 130px) clamp(16px, 20%, 122.5px);
-  font-family: var(--accent-font);
+  font-family: var(--accent-font), sans-serif;
   background-color: var(--card-background-color);
 }
 
@@ -109,7 +109,7 @@
   top: 25px;
   right: 25px;
   opacity: 0.7;
-  font-family: var(--accent-font);
+  font-family: var(--accent-font), sans-serif;
   font-size: 14px;
   text-shadow:
     -1px 0 var(--text-outline),
@@ -231,7 +231,6 @@
   z-index: 1;
   border: none;
   outline: 2px solid var(--outline-color);
-  background-color: transparent;
   background-color: #fff;
   transition: box-shadow 0.3s ease;
   inline-size: 130px;
@@ -264,12 +263,9 @@
 }
 
 .card__like-button .button__text {
-  font-family: var(--accent-font);
+  font-family: var(--accent-font), sans-serif;
   font-weight: 400;
   font-size: 14px;
-}
-
-.card__like-button .button__text {
   position: relative;
   z-index: 1;
   color: var(--button-text-color);
@@ -285,7 +281,7 @@
   border: none;
   padding: 17px;
   outline: 2px solid var(--outline-color);
-  font-family: var(--accent-font);
+  font-family: var(--accent-font), sans-serif;
   font-size: 14px;
   background-color: var(--card-background-color);
 }
@@ -338,7 +334,7 @@
 }
 
 .modal-text {
-  font-family: var(--accent-font);
+  font-family: var(--accent-font), sans-serif;
   font-size: 14px;
   line-height: 150%;
   text-transform: uppercase;
@@ -366,6 +362,6 @@
   position: relative;
   z-index: 1;
   color: var(--button-text-color);
-  font-family: var(--accent-font);
+  font-family: var(--accent-font), sans-serif;
   mix-blend-mode: difference;
 }
