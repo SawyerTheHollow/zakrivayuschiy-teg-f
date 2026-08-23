@@ -13,6 +13,7 @@
 .page {
   justify-items: center;
   font-family: var(--main-font), sans-serif;
+  font-size: 18px;
   background-image: var(--background-gradient);
   background-size: cover;
   background-attachment: fixed;
@@ -263,12 +264,12 @@
 }
 
 .card__like-button .button__text {
-  font-family: var(--accent-font), sans-serif;
-  font-weight: 400;
-  font-size: 14px;
   position: relative;
   z-index: 1;
   color: var(--button-text-color);
+  font-family: var(--accent-font), sans-serif;
+  font-weight: 400;
+  font-size: 14px;
   mix-blend-mode: difference;
 }
 
