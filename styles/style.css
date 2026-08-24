@@ -396,6 +396,7 @@
 }
 
 .modal-close-button-text {
+  text-transform: uppercase;
   font-size: 14px;
   position: relative;
   z-index: 1;
