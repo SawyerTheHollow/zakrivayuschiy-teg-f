@@ -324,6 +324,8 @@
 
   .save-button .save-button-icon {
     margin-bottom: 8px;
+    width: 28px;
+    height: 28px;
   }
 }
 
