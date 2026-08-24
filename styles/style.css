@@ -122,7 +122,7 @@ font-size: clamp(3.0625rem, 1.9087rem + 1.9231vw, 4.0625rem);  text-transform: u
   position: absolute;
   top: 25px;
   right: 25px;
-  opacity: 0.7;
+  opacity: 0.5;
   font-family: var(--accent-font), fantasy;
   font-size: 14px;
   text-shadow:
