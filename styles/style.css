@@ -83,40 +83,55 @@
 }
 
 .freetrack-image {
-  filter: blur(0.8px);
   object-position: 40% 0;
 }
 
+.filter-blur {
+  filter: blur(0.8px);
+}
+
 .first-sprint-first-image {
-  filter: hue-rotate(50deg);
   object-position: 90% 0;
 }
 
+.filter-hue-rotate {
+  filter: hue-rotate(50deg);
+}
+
 .first-sprint-second-image {
-  filter: invert(0.2);
   object-position: 60% 0;
 }
 
-.second-sprint-first-image {
+.filter-invert {
+  filter: invert(0.2);
+}
+
+.filter-saturate {
   filter: saturate(2);
 }
 
 .second-sprint-second-image {
-  filter: brightness(0.5);
   object-position: 70% 0;
 }
 
-.third-sprint-first-image {
+.filter-brightness {
+  filter: brightness(0.5);
+}
+
+.filter-blur-contrast {
   filter: contrast(1.5);
 }
 
-.third-sprint-second-image {
+.filter-grayscale {
   filter: grayscale(0.8);
 }
 
 .current-sprint-image {
-  filter: saturate(2) contrast(1.5);
   object-position: 60% 0;
+}
+
+.filter-colorful {
+  filter: saturate(2) contrast(1.5);
 }
 
 .watermark {
