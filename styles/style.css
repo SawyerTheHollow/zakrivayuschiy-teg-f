@@ -32,7 +32,7 @@
   margin: 100px 0px;
   border: 2px solid rgba(0, 0, 0, 1);
   padding: clamp(122px, 30%, 130px) clamp(16px, 20%, 122.5px);
-  font-family: var(--accent-font), sans-serif;
+  font-family: var(--accent-font), fantasy;
   background-color: var(--card-background-color);
 }
 
@@ -123,7 +123,7 @@ font-size: clamp(3.0625rem, 1.9087rem + 1.9231vw, 4.0625rem);  text-transform: u
   top: 25px;
   right: 25px;
   opacity: 0.7;
-  font-family: var(--accent-font), sans-serif;
+  font-family: var(--accent-font), fantasy;
   font-size: 14px;
   text-shadow:
     -1px 0 var(--text-outline),
@@ -280,7 +280,7 @@ font-size: clamp(3.0625rem, 1.9087rem + 1.9231vw, 4.0625rem);  text-transform: u
   position: relative;
   z-index: 1;
   color: var(--button-text-color);
-  font-family: var(--accent-font), sans-serif;
+  font-family: var(--accent-font), fantasy;
   font-weight: 400;
   font-size: 14px;
   mix-blend-mode: difference;
@@ -295,7 +295,7 @@ font-size: clamp(3.0625rem, 1.9087rem + 1.9231vw, 4.0625rem);  text-transform: u
   border: none;
   padding: 17px;
   outline: 2px solid var(--outline-color);
-  font-family: var(--accent-font), sans-serif;
+  font-family: var(--accent-font), fantasy;
   font-size: 14px;
   background-color: var(--card-background-color);
 }
@@ -350,7 +350,7 @@ font-size: clamp(3.0625rem, 1.9087rem + 1.9231vw, 4.0625rem);  text-transform: u
 }
 
 .modal-text {
-  font-family: var(--accent-font), sans-serif;
+  font-family: var(--accent-font), fantasy;
   font-size: 14px;
   line-height: 150%;
   text-transform: uppercase;
@@ -378,6 +378,6 @@ font-size: clamp(3.0625rem, 1.9087rem + 1.9231vw, 4.0625rem);  text-transform: u
   position: relative;
   z-index: 1;
   color: var(--button-text-color);
-  font-family: var(--accent-font), sans-serif;
+  font-family: var(--accent-font), fantasy;
   mix-blend-mode: difference;
 }
