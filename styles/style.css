@@ -342,7 +342,6 @@
 .save-modal {
   padding: 30px;
   inline-size: clamp(341px, 70%, 353px);
-  block-size: 191px;
 }
 
 .save-modal::backdrop {
