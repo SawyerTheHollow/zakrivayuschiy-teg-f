@@ -37,7 +37,8 @@
 }
 
 .header h1 {
-font-size: clamp(3.0625rem, 1.9087rem + 1.9231vw, 4.0625rem);  text-transform: uppercase;
+  font-size: clamp(3.0625rem, 1.9087rem + 1.9231vw, 4.0625rem);
+  text-transform: uppercase;
 }
 
 .header p {
@@ -251,8 +252,18 @@ font-size: clamp(3.0625rem, 1.9087rem + 1.9231vw, 4.0625rem);  text-transform: u
   block-size: 38px;
 }
 
-.card__like-button:focus {
+.card__like-button:focus,
+.save-button:focus,
+.modal-close-button:focus {
   box-shadow: 4px 4px 0 var(--outline-color);
+  /*Не понимаю, что значит "сбросить outline в :focus". Кнопки выглядят согласно макету, при сбросе они перестают выглядеть согласно макету.*/
+  outline: none;
+}
+
+.card__like-button:focus-visible,
+.save-button:focus-visible,
+.modal-close-button:focus-visible {
+  outline: 2px solid var(--outline-color);
 }
 
 .card__like-button::after,
@@ -368,10 +379,6 @@ font-size: clamp(3.0625rem, 1.9087rem + 1.9231vw, 4.0625rem);  text-transform: u
   background-color: var(--card-background-color);
 
   transition: box-shadow 0.3s ease;
-}
-
-.modal-close-button:focus {
-  box-shadow: 4px 4px 0 var(--outline-color);
 }
 
 .modal-close-button-text {
