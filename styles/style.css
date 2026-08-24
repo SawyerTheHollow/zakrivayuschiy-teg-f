@@ -66,23 +66,35 @@
 }
 
 .card-image-wrapper {
+  aspect-ratio: 1/1;
   position: relative;
+  min-height: 371px;
+  max-height: 696px;
+  min-width: 371px;
+  max-width: 696px;
+  overflow: hidden;
 }
 
 .card img {
-  inline-size: 100%;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .freetrack-image {
   filter: blur(0.8px);
+  object-position: 40% 0;
 }
 
 .first-sprint-first-image {
   filter: hue-rotate(50deg);
+  object-position: 90% 0;
 }
 
 .first-sprint-second-image {
   filter: invert(0.2);
+  object-position: 60% 0;
 }
 
 .second-sprint-first-image {
@@ -91,6 +103,7 @@
 
 .second-sprint-second-image {
   filter: brightness(0.5);
+  object-position: 70% 0;
 }
 
 .third-sprint-first-image {
@@ -103,6 +116,7 @@
 
 .current-sprint-image {
   filter: saturate(2) contrast(1.5);
+  object-position: 60% 0;
 }
 
 .watermark {
