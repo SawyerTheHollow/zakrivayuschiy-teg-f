@@ -269,11 +269,11 @@
 }
 
 .button:focus {
-  box-shadow: 2px 2px 0 var(--outline-color);
   outline: none;
 }
 
 .button:focus-visible {
+  box-shadow: 2px 2px 0 var(--outline-color);
   border: 2px solid var(--outline-color);
   outline: none;
 }
