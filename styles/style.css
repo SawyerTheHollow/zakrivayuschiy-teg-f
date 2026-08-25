@@ -256,34 +256,29 @@
   animation: sparking 0.3s 0.3s 1 ease-in;
 }
 
-.card__like-button {
+.button {
+  font-family: var(--accent-font), fantasy;
+  color: var(--button-text-color);
+  font-weight: 400;
+  font-size: 14px;
   position: relative;
   z-index: 1;
-  border: none;
-  outline: 2px solid var(--outline-color);
-  background-color: #fff;
+  border: 2px solid var(--outline-color);
+  background-color: var(--card-background-color);
   transition: box-shadow 0.3s ease;
-  inline-size: 130px;
-  block-size: 38px;
 }
 
-.card__like-button:focus,
-.save-button:focus,
-.modal-close-button:focus {
-  box-shadow: 4px 4px 0 var(--outline-color);
-  /*Не понимаю, что значит "сбросить outline в :focus". Кнопки выглядят согласно макету, при сбросе они перестают выглядеть согласно макету.*/
+.button:focus {
+  box-shadow: 2px 2px 0 var(--outline-color);
   outline: none;
 }
 
-.card__like-button:focus-visible,
-.save-button:focus-visible,
-.modal-close-button:focus-visible {
-  outline: 2px solid var(--outline-color);
+.button:focus-visible {
+  border: 2px solid var(--outline-color);
+  outline: none;
 }
 
-.card__like-button::after,
-.save-button::after,
-.modal-close-button::after {
+.button::after {
   content: "";
   position: absolute;
   top: 0px;
@@ -296,34 +291,24 @@
   transform-origin: 0;
 }
 
-.card__like-button:hover::after,
-.save-button:hover::after,
-.modal-close-button:hover::after {
+.button:hover::after {
   transform: scaleX(1);
 }
 
 .card__like-button .button__text {
   position: relative;
   z-index: 1;
-  color: var(--button-text-color);
-  font-family: var(--accent-font), fantasy;
-  font-weight: 400;
-  font-size: 14px;
+  display: block;
+  margin: 11px 37px;
   mix-blend-mode: difference;
 }
 
 .save-button {
-  position: relative;
   display: flex;
   justify-items: center;
   align-items: center;
   margin-bottom: 100px;
-  border: none;
   padding: 17px;
-  outline: 2px solid var(--outline-color);
-  font-family: var(--accent-font), fantasy;
-  font-size: 14px;
-  background-color: var(--card-background-color);
 }
 
 .save-button-text {
@@ -382,20 +367,14 @@
 }
 
 .modal-close-button {
-  position: relative;
   grid-column: span 2;
   grid-row: 2;
   align-self: flex-end;
   height: 38px;
-  border: none;
-
-  outline: 2px solid var(--outline-color);
-  background-color: var(--card-background-color);
-
-  transition: box-shadow 0.3s ease;
 }
 
 .modal-close-button-text {
+  display: block;
   text-transform: uppercase;
   font-size: 14px;
   position: relative;
